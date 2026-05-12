@@ -313,8 +313,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: var(--spacing-3) var(--spacing-6);
-  font-family: var(--font-family-body);
-  font-size: var(--font-size-base);
+  font-family: var(--font-sans);
+  font-size: 16px;
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-tight);
   border-radius: var(--radius-lg);
@@ -362,12 +362,12 @@ body {
 
 .btn-lg {
   padding: var(--spacing-4) var(--spacing-8);
-  font-size: var(--font-size-lg);
+  font-size: 18px;
 }
 
 .btn-xl {
   padding: var(--spacing-5) var(--spacing-10);
-  font-size: var(--font-size-xl);
+  font-size: 20px;
   border-radius: var(--radius-xl);
 }
 
@@ -408,10 +408,42 @@ body {
   position: relative;
 }
 
+/* Hero Grid Layout */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .hero-content {
   position: relative;
   z-index: 1;
-  text-align: center;
+  text-align: left;
+}
+
+.hero-vsl {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-vsl iframe {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Mobile: Stack Vertical */
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
 }
 
 .hero-badge {
@@ -577,7 +609,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--font-size-3xl);
+  font-size: 32px;
   font-weight: var(--font-weight-black);
   color: var(--color-white);
 }
@@ -653,14 +685,14 @@ body {
 }
 
 .timer-number {
-  font-size: var(--font-size-3xl);
+  font-size: 32px;
   font-weight: var(--font-weight-black);
   line-height: 1;
   margin-bottom: var(--spacing-1);
 }
 
 .timer-label {
-  font-size: var(--font-size-xs);
+  font-size: 12px;
   text-transform: uppercase;
   opacity: 0.8;
 }
@@ -703,7 +735,7 @@ body {
 }
 
 .cta-divider {
-  font-size: var(--font-size-2xl);
+  font-size: 24px;
   font-weight: var(--font-weight-bold);
   opacity: 0.5;
 }
