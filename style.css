@@ -996,6 +996,55 @@ body {
   }
 }
 
+/* ── Section About ── */
+.section-about {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.about-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-photo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.highlight-quote {
+  background: var(--accent-bg);
+  padding: var(--spacing-4);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--accent);
+}
+
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-image {
+    order: -1;
+    margin-bottom: var(--spacing-6);
+  }
+  
+  .about-photo {
+    max-width: 300px;
+  }
+}
+
 /* Print Styles */
 @media print {
 }
