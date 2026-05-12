@@ -1,5 +1,14 @@
 /* MAESTRO PALCO - Main CSS Assembly */
 
+/* Import Design Tokens FIRST */
+@import url('../../tokens/design-tokens.css');
+
+/* Import Atomic Components */
+@import url('../../atoms/typography.css');
+@import url('../../atoms/buttons.css');
+@import url('../../molecules/cards.css');
+@import url('../../organisms/sections.css');
+
 /* Reset & Base */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -22,18 +31,42 @@ body {
   min-height: 100vh;
 }
 
-/* Import Design Tokens */
-@import url('../../tokens/design-tokens.css');
+/* Core Animations */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
 
-/* Import Atoms */
-@import url('../../atoms/typography.css');
-@import url('../../atoms/buttons.css');
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
 
-/* Import Molecules */
-@import url('../../molecules/cards.css');
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
-/* Import Organisms */
-@import url('../../organisms/sections.css');
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* Utility Classes */
 .visually-hidden {
