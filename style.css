@@ -598,20 +598,22 @@ body {
 /* Method Cards */
 .card-method {
   text-align: center;
-  padding: var(--spacing-8);
+  padding: var(--spacing-6);
   background: var(--color-white);
   border: 2px solid var(--color-neutral-200);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
 }
 
 .card-method-circle {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: var(--radius-full);
-  margin: 0 auto var(--spacing-6);
+  margin: 0 auto var(--space-4);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 32px;
+  font-size: 16px;
   font-weight: var(--font-weight-black);
   color: var(--color-white);
 }
@@ -634,6 +636,9 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--spacing-8);
   margin-top: var(--spacing-12);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Social Proof */
