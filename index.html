@@ -439,12 +439,6 @@
         </div>
     </section>
     
-    <!-- Sticky CTA (Mobile) -->
-    <div class="btn-sticky">
-        <a href="https://chk.eduzz.com/Q9N2342Z01?utm_source=PV+simon&utm_medium=link&utm_campaign=maestro+palco&utm_id=05+2026" class="btn btn-primary btn-lg" target="_blank">
-            Quero Estruturar Minha Carreira
-        </a>
-    </div>
     
     <!-- Footer -->
     <footer class="section-sm" style="background: var(--color-neutral-900); color: var(--color-neutral-400);">
@@ -484,20 +478,6 @@
             });
         });
         
-        // Show sticky CTA after scroll
-        let lastScroll = 0;
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-            const sticky = document.querySelector('.btn-sticky');
-            
-            if (currentScroll > 500 && currentScroll < lastScroll) {
-                sticky.style.transform = 'translateX(-50%) translateY(0)';
-            } else if (currentScroll > lastScroll) {
-                sticky.style.transform = 'translateX(-50%) translateY(200%)';
-            }
-            
-            lastScroll = currentScroll;
-        });
         
         // Update timer dynamically (optional)
         setInterval(() => {

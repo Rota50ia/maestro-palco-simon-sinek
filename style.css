@@ -371,15 +371,6 @@ body {
   border-radius: var(--radius-xl);
 }
 
-.btn-sticky {
-  position: fixed;
-  bottom: var(--spacing-4);
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: var(--z-sticky);
-  box-shadow: var(--shadow-xl);
-  animation: pulse 2s infinite;
-}
 
 /* Layout */
 .section {
@@ -993,10 +984,6 @@ body {
     font-size: 24px;
   }
   
-  .btn-sticky {
-    width: calc(100% - var(--spacing-8));
-    max-width: 400px;
-  }
   
   .hero-cta {
     flex-direction: column;
@@ -1014,9 +1001,6 @@ body {
 
 /* Print Styles */
 @media print {
-  .btn-sticky {
-    display: none !important;
-  }
 }
 
 /* Reduced Motion */
