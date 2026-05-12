@@ -253,7 +253,7 @@ body {
   background: linear-gradient(120deg, transparent 0%, var(--accent) 10%, var(--accent) 90%, transparent 100%);
   background-size: 100% 40%;
   background-repeat: no-repeat;
-  background-position: 0 85%;
+  background-position: 0 95%;
   padding: 0 var(--space-1);
 }
 
@@ -402,7 +402,7 @@ body {
 /* Hero Grid Layout */
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1fr 1.2fr;
   gap: var(--space-8);
   align-items: center;
   max-width: 1200px;
