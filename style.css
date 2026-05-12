@@ -250,11 +250,8 @@ body {
 }
 
 .text-highlight {
-  background: linear-gradient(120deg, transparent 0%, var(--accent) 10%, var(--accent) 90%, transparent 100%);
-  background-size: 100% 40%;
-  background-repeat: no-repeat;
-  background-position: 0 95%;
-  padding: 0 var(--space-1);
+  color: var(--accent);
+  font-weight: 600;
 }
 
 .text-white { color: #FFFFFF; }
