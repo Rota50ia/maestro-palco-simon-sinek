@@ -790,10 +790,162 @@ body {
   opacity: 0.6;
 }
 
-.cta-option-good {
-  background: linear-gradient(135deg, var(--accent) 0%, var(--m-gold-700) 100%);
-  transform: scale(1.1);
-  box-shadow: var(--shadow-lg);
+/* Pricing Card */
+.pricing-card {
+  background: var(--m-midnight-900);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-8);
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  transform: scale(1.05);
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: var(--spacing-6);
+}
+
+.pricing-badge {
+  background: var(--accent);
+  color: var(--inverse);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-3);
+  display: inline-block;
+}
+
+.pricing-title {
+  color: var(--color-white);
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: var(--space-2);
+}
+
+.pricing-price {
+  color: var(--accent);
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 0.8;
+  margin-bottom: var(--space-2);
+}
+
+.pricing-subtitle {
+  color: var(--color-neutral-400);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+.pricing-features {
+  background: var(--color-neutral-800);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-6);
+  margin: var(--spacing-6) 0;
+}
+
+.features-label {
+  color: var(--color-white);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--space-4);
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list li {
+  color: var(--color-white);
+  padding: var(--space-2) 0;
+  position: relative;
+  padding-left: var(--space-5);
+}
+
+.features-list li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.pricing-guarantee {
+  background: rgba(200,165,76,0.1);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-4);
+  margin: var(--spacing-4) 0;
+}
+
+.guarantee-badge {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: var(--space-2);
+}
+
+.guarantee-text {
+  color: var(--color-white);
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.pricing-context {
+  margin: var(--spacing-4) 0;
+}
+
+.pricing-context p {
+  color: var(--color-neutral-300);
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.pricing-btn {
+  background: var(--accent);
+  color: var(--inverse);
+  display: block;
+  width: 100%;
+  padding: var(--spacing-4);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  margin: var(--spacing-6) 0;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pricing-btn:hover {
+  background: var(--m-gold-600);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(200,165,76,0.3);
+}
+
+.pricing-footer {
+  text-align: center;
+}
+
+.pricing-footer p {
+  color: var(--color-neutral-500);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
 }
 
 .cta-divider {
@@ -825,6 +977,20 @@ body {
   
   .cta-divider {
     transform: rotate(90deg);
+  }
+  
+  .pricing-card {
+    transform: scale(1);
+    margin: var(--spacing-4);
+    padding: var(--spacing-6);
+  }
+  
+  .pricing-price {
+    font-size: 56px;
+  }
+  
+  .pricing-title {
+    font-size: 24px;
   }
   
   .btn-sticky {
