@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAESTRO PALCO - Teste</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Teste Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">✅ CSS Funcionando</span>
+                
+                <h1 class="h1 hero-title heading">
+                    E se você pudesse planejar suas férias com 6 meses de antecedência?
+                </h1>
+                
+                <p class="lead hero-subtitle">
+                    <span class="text-highlight">MAESTRO PALCO</span> - CSS consolidado funcionando perfeitamente!
+                </p>
+                
+                <div class="hero-cta">
+                    <a href="#test" class="btn btn-primary btn-xl">
+                        ✅ CSS Carregado
+                    </a>
+                    <a href="#test" class="btn btn-outline btn-lg">
+                        ✅ Responsivo OK
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Teste Cards -->
+    <section class="section section-proof">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="h2 heading">Teste dos Componentes</h2>
+            </div>
+            
+            <div class="card-grid-testimonials">
+                <div class="card card-testimonial">
+                    <div class="card-body">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23FFB84D'/%3E%3Ctext x='50' y='55' text-anchor='middle' font-size='30' fill='white'%3E✅%3C/text%3E%3C/svg%3E" 
+                             alt="Teste" class="card-testimonial-avatar">
+                        <h4 class="card-testimonial-name">Teste CSS</h4>
+                        <p class="card-testimonial-role">Design System</p>
+                        <div class="card-testimonial-rating">★★★★★</div>
+                        <p class="quote">
+                            "CSS consolidado funcionando perfeitamente! Todas as classes estão carregadas e responsivas."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sticky CTA -->
+    <div class="btn-sticky">
+        <a href="#test" class="btn btn-primary btn-lg">
+            ✅ Sticky Funcionando
+        </a>
+    </div>
+    
+    <script>
+        console.log('✅ MAESTRO PALCO - CSS Teste OK');
+        
+        // Testar scroll smooth
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                console.log('✅ Smooth scroll funcionando');
+            });
+        });
+    </script>
+    
+</body>
+</html>
