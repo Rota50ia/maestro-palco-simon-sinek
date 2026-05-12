@@ -198,8 +198,8 @@ body {
 }
 
 .h1 {
-  font-size: clamp(56px, 10vw, 120px);
-  line-height: 1;
+  font-size: clamp(24px, 6vw, 48px);
+  line-height: 1.1;
   letter-spacing: -1px;
 }
 
@@ -226,8 +226,8 @@ body {
 }
 
 .lead {
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.6;
   color: var(--text-muted);
   font-weight: 300;
 }
@@ -411,8 +411,8 @@ body {
 /* Hero Grid Layout */
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-16);
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-8);
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -460,23 +460,25 @@ body {
 
 .hero-title {
   animation: fadeInUp 0.8s ease-out;
-  margin-bottom: var(--spacing-6);
+  margin-bottom: var(--space-4);
 }
 
 .hero-subtitle {
   animation: fadeInUp 1s ease-out;
-  margin-bottom: var(--spacing-8);
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: var(--space-6);
+  max-width: 500px;
 }
 
 .hero-cta {
   animation: fadeInUp 1.2s ease-out;
   display: flex;
-  gap: var(--spacing-4);
-  justify-content: center;
-  flex-wrap: wrap;
+  gap: var(--space-3);
+  flex-direction: column;
+}
+
+.hero-cta .btn {
+  font-size: 14px;
+  padding: var(--space-2) var(--space-4);
 }
 
 /* Pain Points */
