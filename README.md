@@ -101,6 +101,19 @@
 
 ## 🔧 Setup do Projeto
 
+### ⚡ Correções Aplicadas (v2)
+
+**PROBLEMAS IDENTIFICADOS:**
+- ❌ CSS @imports na ordem errada
+- ❌ Design tokens carregados após uso das variáveis
+- ❌ Animations faltando no arquivo principal
+
+**SOLUÇÕES IMPLEMENTADAS:**
+- ✅ **CSS Consolidado:** Criado `style.css` único com todos os estilos
+- ✅ **Ordem Correta:** Design tokens carregados primeiro
+- ✅ **Performance:** Zero dependências CSS externas
+- ✅ **Teste:** Página `teste.html` para validação
+
 ### Desenvolvimento Local
 
 ```bash
@@ -110,8 +123,11 @@ git clone https://github.com/Rota50ia/maestro-palco-simon-sinek.git
 # Navegue para o diretório
 cd maestro-palco-simon-sinek
 
-# Abra em servidor local (recomendado: Live Server no VS Code)
-# Ou use Python para servidor simples:
+# TESTE RÁPIDO: Abra teste.html primeiro
+# Se aparecer badges verdes = CSS funcionando ✅
+
+# Depois abra index.html (página principal)
+# Ou use servidor local:
 python -m http.server 8000
 ```
 
@@ -120,22 +136,33 @@ python -m http.server 8000
 ```
 maestro-palco-simon-sinek/
 ├── README.md                 # Este arquivo
-├── index.html               # Landing page principal
+├── index.html               # Landing page principal ⭐
+├── style.css                # CSS consolidado ⭐ (USE ESTE)
+├── teste.html               # Página de teste CSS ⭐
 ├── tokens/
-│   └── design-tokens.css    # Variáveis CSS globais
+│   └── design-tokens.css    # [LEGADO] Design tokens
 ├── atoms/
-│   ├── typography.css       # Estilos de texto
-│   └── buttons.css         # Componentes de botão
+│   ├── typography.css       # [LEGADO] Componentes texto
+│   └── buttons.css         # [LEGADO] Componentes botão
 ├── molecules/
-│   └── cards.css           # Componentes de card
+│   └── cards.css           # [LEGADO] Componentes card
 ├── organisms/
-│   └── sections.css        # Seções da página
+│   └── sections.css        # [LEGADO] Seções da página
 └── assets/
     ├── css/
-    │   └── main.css        # CSS principal
+    │   └── main.css        # [LEGADO] CSS principal
     └── js/
         └── performance.js  # JavaScript otimizado
 ```
+
+**ARQUIVOS PRINCIPAIS (v2):**
+- ⭐ `index.html` - Landing page funcionando
+- ⭐ `style.css` - CSS único e consolidado (~1200 linhas)
+- ⭐ `teste.html` - Página de validação
+
+**ARQUIVOS LEGADO:**
+- Diretórios `tokens/`, `atoms/`, `molecules/`, `organisms/` mantidos para referência
+- Não são mais necessários (tudo consolidado em `style.css`)
 
 ## 📊 Métricas de Qualidade
 
